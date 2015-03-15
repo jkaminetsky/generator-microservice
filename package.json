@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/jkaminetsky/microservice-generator",
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-help": "^1.3.4"
+    "gulp": "^3.8.11"
   }
 }
