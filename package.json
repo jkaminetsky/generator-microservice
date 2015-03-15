@@ -4,11 +4,11 @@
   "description": "yeoman generator for node microservice",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/gulp/bin/gulp test"
+    "test": "node node_modules/gulp/bin/gulp lint"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:jkaminetsky/microservice-generator.git"
+    "url": "git@github-jkaminetsky:jkaminetsky/generator-microservice.git"
   },
   "keywords": [
     "yeoman",
@@ -21,10 +21,12 @@
   "author": "Joshua Kaminetsky",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jkaminetsky/microservice-generator/issues"
+    "url": "https://github.com/jkaminetsky/generator-microservice/issues"
   },
-  "homepage": "https://github.com/jkaminetsky/microservice-generator",
+  "homepage": "https://github.com/jkaminetsky/generator-microservice",
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.9.2",
+    "jshint-stylish": "^1.0.1"
   }
 }

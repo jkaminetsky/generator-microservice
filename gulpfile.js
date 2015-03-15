@@ -1,6 +1,15 @@
-var gulp = require('gulp');
+'use strict';
 
-/**
- * Runs tests
- */
-gulp.task('test', function () {});
+var gulp = require('gulp'),
+    jshint = require('gulp-jshint'),
+    stylish = require('jshint-stylish');
+
+/** Lint JS */
+gulp.task('lint', function () {
+    var srcToLint = ['**/*.js', '!node_modules/**/*'];
+
+    return gulp
+        .src(srcToLint)
+        .pipe(jshint())
+        .pipe(jshint.reporter(stylish));
+});
